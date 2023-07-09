@@ -35,6 +35,8 @@ section.container{
 .btn {
   padding: 8px 8px;
   color: #151515;
+  
+  padding: 12px 34px;
   border-radius: 50px;
   background: linear-gradient(90.65deg, #25a2c7 0.19%, #ed09e4 100%);
   box-shadow: 0px 2px 8px 0px #00000040, 0px 6px 10px 0px #00000040;
@@ -46,7 +48,7 @@ section.container{
 }
 /* gradient border */
 .btn-outline {
-  padding: 8px 8px;
+  
   border-radius: 50px;
   background: #1e1e1e;
   box-shadow: 0px 2px 8px 0px #00000040, 0px 6px 10px 0px #00000040;
@@ -151,6 +153,10 @@ header {
   .container {
     width: 96%;
     padding: 0 12px;
+  }
+  .btn , .btn-outline{
+    padding: 10px 2rem;
+    font-size: 1rem;
   }
   .menu {
     display: block;

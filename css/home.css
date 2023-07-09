@@ -26,7 +26,6 @@
 }
 .hero .left .btn{
    /* color: #fff; */
-    padding: 12px 34px;
     font-size: 16px;
     font-weight: 700;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
@@ -93,6 +92,15 @@
     }
     .hero .right{
         width: 100%;
+    }
+    .heorbtncontainer{
+        
+        gap: .5rem;
+        justify-content: center;
+    }
+
+    .key-features{
+        grid-template-columns: repeat(1,1fr);
     }
 }
 /* responsive section */
