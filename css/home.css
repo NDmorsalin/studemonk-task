@@ -44,7 +44,43 @@
 /* hero section */
 
 
+/* key feature */
+.key-features{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    margin-top: 2rem;
+    gap: 16px;
+}
+.key-features .box{
+   
+    padding: 20px;
+    background-color: #262626;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    border-radius: 5px;
+    text-align: center;
+}
+.key-features .box img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
 
+    border-radius: .5rem;
+
+}
+.key-features .box h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.key-features .box p{
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* key feature */
 
 
 /* responsive section */
