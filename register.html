@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="digital recruitment solution app aimed
+at providing a seamless hiring experience for multiple MNCs">
+    <title>Register || StudyMonk</title>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+   
+    <!-- header section start -->
+    <header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#">Your Logo</a>
+    </div>
+    <ul class="menu">
+      <li><a href="/">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="login.html">Log in</a></li>
+      <li><a href="">Register</a></li>
+    </ul>
+    <div class="mobile-menu">
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+    </div>
+  </nav>
+    </header>
+
+    <!-- header section end -->
+
+    <main>
+        <section class="login">
+            <div class="imgContainer">
+                <img src="images/register.gif" alt="login">
+            </div>
+            <div class="loginContainer">
+                <h1 class="login-title">Login on Study Monk</h1>
+                <form action="login.php" method="post">
+                    <div class="inputContainer">
+                    
+                        <i class="fas fa-user"></i>
+
+                         <input type="text" name="name" id="name" placeholder="Enter your Name">
+                    </div>
+                    <div class="inputContainer">
+                   
+                        <i class="fas fa-envelope"></i>
+
+                         <input type="email" name="email" id="email" placeholder="Enter your email">
+                    </div>
+                   <div class="inputContainer">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                   </div>
+                    
+                    <button class="btn solid" type="submit">Register</button>
+                    <p class="social-text">Or Sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+                <p class="goregister">Don't have an account? <a href="login.html">Log in</a></p>
+            </div>
+        </section>    
+    </main>
+</body>
+<script src="main.js"></script>
+</html>

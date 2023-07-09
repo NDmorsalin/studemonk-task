@@ -1,0 +1,130 @@
+/* default style change */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+body {
+  background-color: #151515;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #fff;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* header style */
+header {
+  background-color: #2a2a31bd;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.hamburger {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin-bottom: 6px;
+}
+
+
+
+/* responsive header*/
+@media screen and (max-width: 768px) {
+  .menu {
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    right: -1000px;
+    width: 80%;
+    top: 82px;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #121231;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+  }
+  .menu li {
+    margin: 1rem 3rem;
+    padding: 8px 8px;
+    /* border: 2px solid #333333; */
+
+    border-radius: 50px;
+    background: linear-gradient(90.65deg, #25a2c7 0.19%, #ed09e4 100%);
+    box-shadow: 0px 2px 8px 0px #00000040, 0px 6px 10px 0px #00000040;
+    transition: all 0.5s ease;
+  }
+  .menu li:hover {
+    background: linear-gradient(90.65deg, #ed09e4 0.19%, #25a2c7 100%);
+  }
+  .menu li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .menu.show {
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .mobile-menu.show .hamburger {
+    background-color: #333333;
+  }
+}
