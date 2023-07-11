@@ -1,0 +1,228 @@
+/* card section */
+.card-contaienr {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  background: #1e1e1e;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.card-1 {
+  border-left: 0.5rem solid #29c5ee;
+}
+.card-2 {
+  border-left: 0.5rem solid #cf1a2c;
+}
+.card-3 {
+  border-left: 0.5rem solid #eab04d;
+}
+.card-4 {
+  border-left: 0.5rem solid #19c8a7;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.card-top-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tec-log {
+  color: #bbbcbc;
+}
+.card-top-title .lefe {
+  display: flex;
+  gap: 1rem;
+}
+
+.tec-title {
+  color: #ffffff;
+
+  font-size: 1.39181rem;
+  font-weight: 800;
+}
+.posttime {
+  color: #898989;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.righ-logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #5ac1fc5b;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.experience-location-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.ex-lo-item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  border-radius: 50px;
+  background: #282828;
+  padding: 4px 8px;
+  color: #898989;
+}
+
+h2.num {
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 2.42625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+h2.num span.sub {
+  color: #898989;
+  font-family: Urbanist;
+  font-size: 0.92788rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-bottom {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.time {
+  color: #00b85e;
+  font-family: Urbanist;
+  font-size: 0.82788rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/* search bar */
+.searchbar {
+  width: 80%;
+  margin: 2rem auto;
+}
+.inputContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border-radius: 50px;
+  background: rgba(40, 40, 40, 0.5);
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 1rem auto;
+  width: 60%;
+}
+.inputContainer i.fas {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  color: #939090;
+}
+input {
+  flex: 1;
+  width: 100%;
+  background: transparent;
+  padding: 0.5rem;
+  display: block;
+  font-size: 1.24rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* table title */
+.candidate-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.table-conteiner{
+    border-radius: 0.9705rem;
+background: #1E1E1E;
+padding: 2rem;
+overflow: auto;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.tabs-btn {
+  padding: 0.5rem 1rem;
+  background: #1E1E1E;
+  color: #898989;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.tabs-btn.active {
+  color: #fff;
+}
+.tabs-btn::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 1.45575rem;
+  transition: all 0.83s ;
+}
+.tabs-btn.active::after,
+.tabs-btn:hover.tabs-btn::after {
+ 
+  background: linear-gradient(124deg, #6e38e0 0%, #ff5f36 100%);
+}
+
+/* responsive  */
+
+@media screen and (max-width: 768px) {
+  .card-contaienr {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .inputContainer {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-contaienr {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
