@@ -1,4 +1,4 @@
-
+(async function () {
 // toggle header menu
 const mobileMenu = document.querySelector('.mobile-menu');
 const menu = document.querySelector('.menu');
@@ -8,12 +8,15 @@ mobileMenu.addEventListener('click', function () {
   menu.classList.toggle('show');
 });
 
+
 // table content
 const table = document.querySelector('#candidate-table');
 
 const tableBody = table.querySelector('tbody');
 
+const res = await fetch('https://raw.githubusercontent.com/NDmorsalin/studymonk-task/main/data.json');
 
+const candidates = await res.json();
 
 const renderTable = function() {
   candidates.forEach(function(candidate) {
@@ -73,3 +76,4 @@ console.dir(tableBody)
     }
   });
 });
+})();
